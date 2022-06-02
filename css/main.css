@@ -109,13 +109,13 @@ body main .main__info-block .info-block__container .info-block__link {
     margin: 15px;
     padding: 90px;
     text-decoration: none;
-    transition: background .5s;
+    transition: all .5s;
     width: 480px
 }
 
 body main .main__info-block .info-block__container .info-block__link:hover {
     background: #1035ad
-}
+;transform: translate(0, -10px);/* font-size: 12px; */}
 
 body main .main__info-block .info-block__container .info-block__link:hover .link__text-block {
     align-items: center;
@@ -129,9 +129,8 @@ body main .main__info-block .info-block__container .info-block__link:hover .link
 
 body main .main__info-block .info-block__container .info-block__link:hover .link__text-block .text-block__text {
     color: #fff;
-    font-size: 2em;
-    margin-left: 15px
-}
+    /* font-size: 1.5em; */
+    /* margin-left: 15px; */}
 
 body main .main__info-block .info-block__container .info-block__link .link__text-block {
     align-items: center;
@@ -399,7 +398,9 @@ body .body__video-container .video-container__block-content .block-content__cont
     margin-top: 5px;
     max-height: 80px;
     max-width: 280px;
-    overflow: auto
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    overflow: hidden
 }
 
 body .body__video-container .video-container__block-content .block-content__container .container__video-container .video-container__title::-webkit-scrollbar {
@@ -634,7 +635,8 @@ body .body__publication-container .publication-container__publication-body .publ
     color: #000;
     font-weight: 500;
     margin-top: 5px;
-    text-decoration: none
+    text-decoration: none;
+    text-align: center;
 }
 
 body .body__publication-container .publication-container__publication-body .publication-info__publication-statistics {
@@ -1195,6 +1197,7 @@ body .body__admin-container .admin-container__main-container .main-container__un
 body .body__admin-container .admin-container__main-container .main-container__unfinished-publications-container .unfinished-publications-container__list .list__link:hover {
     text-decoration: underline
 }
+
 
 body .body__admin-container .admin-container__workspace {
     width: 80%
